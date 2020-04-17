@@ -1,0 +1,2 @@
+#!/bin/csh -f
+matlab -nodisplay -singleCompThread -nosplash -r "$1; exit"

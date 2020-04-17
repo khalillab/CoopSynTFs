@@ -1,0 +1,26 @@
+#!/bin/bash -l
+
+# Book Keeping
+echo "=========================================================="
+echo "Starting on       : $(date)"
+echo "Running on node   : $(hostname)"
+echo "Current directory : $(pwd)"
+echo "Current job ID    : $JOB_ID"
+echo "Current job name  : $JOB_NAME"
+echo "Task index number : $TASK_ID"
+echo "=========================================================="
+
+
+# Specify the version of MATLAB to be used
+. /usr/local/Modules/default/init/bash
+module load matlab/2013a
+
+# program name or command and its options and arguments
+matlab -nodisplay -nosplash -r "$1; exit"
+
+
+# Book Keeping
+echo "Done"
+echo "=========================================================="
+echo "Finished on       : $(date)"
+echo "=========================================================="

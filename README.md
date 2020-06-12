@@ -8,9 +8,7 @@ Bashor, Patel, et. al. Complex signal processing in synthetic gene circuits usin
 
 **Updates:**
 
-*Renamed functions:*
-
-Format: [Function name in paper supplement] -> [New name]
+***Renamed functions [Function name in paper supplement] -> [New name]***
 
 Hillfun.m       -> hillguess.m
 
